@@ -5,7 +5,8 @@ export const TextBold = styled.TextInput.attrs((props) => {
     editable: props.editable ?? false,
   };
 })`
-  color: ${(props) => (props.variant === "light" ? "#ffffff" : "#404042")};
+  color: ${(props) =>
+    props.paid ? "#4DBBA4" : props.variant === "light" ? "#ffffff" : "#404042"};
   font-size: ${(props) => props.fontSize ?? "16px"};
   font-weight: bold;
 `;
